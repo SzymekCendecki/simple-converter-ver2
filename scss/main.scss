@@ -1,4 +1,4 @@
-@import "buttons";
+@import "screen320";
 //reset
 *{
    margin: 0;
@@ -36,28 +36,4 @@ header, footer, nav, #main{
 
 header{
   text-align: center;
-}
-
-nav{
-  margin-top: 2%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.main{
-  text-align: center;
-}
-
-footer{
-  width: 100%;
- }
-
-.container{
-  width: 90%;
-  margin: 0 auto;
-}
-
-.height4vh{
-  height: 4vh;
 }

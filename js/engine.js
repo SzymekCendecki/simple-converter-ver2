@@ -109,7 +109,7 @@ module.exports.first = function () {
     $(".main").append("<input type='number' id='numberPercentsValue'>");
     $(".main").append("<button id='calculatePercentsWidth'>oblicz</button>");
     $(".main").append("<p id='scoreTitle'>Wynik to:</p>");
-    $(".main").append("<p id='scoreWidth' class='height4vh'></p>");
+    $(".main").append("<p id='scoreWidth' class='height5vh'></p>");
 
     $("#calculatePixelsWidth").on("click", function () {
       var widthPixels = $("#numberPixelsValue").val();
@@ -130,7 +130,7 @@ module.exports.first = function () {
     $(".main").append("<input type='number' id='numberPercentsValueHeight'>");
     $(".main").append("<button id='calculatePercentsHeight'>oblicz</button>");
     $(".main").append("<p id='scoreTitle'>Wynik to:</p>");
-    $(".main").append("<p id='scoreHeight' class='height4vh'></p>");
+    $(".main").append("<p id='scoreHeight' class='height5vh'></p>");
 
     $("#calculatePixelsHeight").on("click", function () {
       var heightPixels = $("#numberPixelsValueHeight").val();

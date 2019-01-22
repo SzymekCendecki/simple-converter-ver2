@@ -1,2 +1,5 @@
 21 stycznia 2018 - wersja 0.0.1
 Rozpoczęcie nowej wersji kalkulatora wartośc z pikseli na procenty i odwrotnie, która  ma zapewnić lepszą responsywność, przelicznika.
+
+22 stycznia 2018 - wersja 0.0.2
+Poprawki dla szerokości ekranu 320px.
