@@ -78,30 +78,18 @@ module.exports = __webpack_require__(1);
 
 
 var first = __webpack_require__(2);
+var second = __webpack_require__(3);
+var third = __webpack_require__(4);
+var fourth = __webpack_require__(5);
+var fifth = __webpack_require__(6);
 
 document.addEventListener("DOMContentLoaded", function () {
-  first.first();
-}); //koniec DOMContentLoaded
 
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-//obsługa zdarzeń dla przycisku 800x600 pikseli
-
-module.exports.first = function () {
-
-  var onePercent800 = 8;
-  var onePercent600 = 6;
-
-  $("#first").on("click", function () {
+  module.exports.xxx = function (number1, number2, number3, number4) {
     $(".main").empty();
 
     //width part
-    $(".main").append("<p id='pixelsToPercents'>Konwersja szerokości z pikseli na procenty dla szerokości 800px</p>");
+    $(".main").append("<p id='pixelsToPercents'>Konwersja szerokości z pikseli na procenty dla szerokości " + number3 + "px</p>");
     $(".main").append("<p id='subTitlePixels'>Podaj liczbę (w pikselach)</p>");
     $(".main").append("<input type='number' id='numberPixelsValue'>");
     $(".main").append("<button id='calculatePixelsWidth'>oblicz</button>");
@@ -113,16 +101,16 @@ module.exports.first = function () {
 
     $("#calculatePixelsWidth").on("click", function () {
       var widthPixels = $("#numberPixelsValue").val();
-      $("#scoreWidth").text(widthPixels / onePercent800 + "%");
+      $("#scoreWidth").text(widthPixels / number1 + "%");
     });
 
     $("#calculatePercentsWidth").on("click", function () {
       var widthPercents = $("#numberPercentsValue").val();
-      $("#scoreWidth").text(widthPercents * onePercent800 + "px");
+      $("#scoreWidth").text(widthPercents * number1 + "px");
     });
 
     //height part
-    $(".main").append("<p id='pixelsToPercentsHeight'>Konwersja wysokości z pikseli na procenty dla wysokości 600px</p>");
+    $(".main").append("<p id='pixelsToPercentsHeight'>Konwersja wysokości z pikseli na procenty dla wysokości " + number4 + "px</p>");
     $(".main").append("<p id='subTitlePixelsHeight'>Podaj liczbę (w pikselach)</p>");
     $(".main").append("<input type='number' id='numberPixelsValueHeight'>");
     $(".main").append("<button id='calculatePixelsHeight'>oblicz</button>");
@@ -134,14 +122,104 @@ module.exports.first = function () {
 
     $("#calculatePixelsHeight").on("click", function () {
       var heightPixels = $("#numberPixelsValueHeight").val();
-      $("#scoreHeight").text(heightPixels / onePercent600 + "%");
+      $("#scoreHeight").text(heightPixels / number2 + "%");
     });
 
     $("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
     $("#calculatePercentsHeight").on("click", function () {
       var heightPercents = $("#numberPercentsValueHeight").val();
-      $("#scoreHeight").text(heightPercents * onePercent600 + "px");
+      $("#scoreHeight").text(heightPercents * number2 + "px");
     });
+  };
+
+  first.first();
+  second.second();
+  third.third();
+  fourth.fourth();
+  fifth.fifth();
+}); //koniec DOMContentLoaded
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+//obsługa zdarzeń dla przycisku 800x600 pikseli
+var workingFile = __webpack_require__(1);
+
+module.exports.first = function () {
+  $("#first").on("click", function () {
+    workingFile.xxx(8, 6, 800, 600);
+  });
+};
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+//obsługa zdarzeń dla przycisku 1024x768 pikseli
+var workingFile = __webpack_require__(1);
+
+module.exports.second = function () {
+
+      $("#second").on("click", function () {
+            workingFile.xxx(10.24, 7.68, 1024, 768);
+      });
+};
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+//obsługa zdarzeń dla przycisku 800x600 pikseli
+var workingFile = __webpack_require__(1);
+
+module.exports.third = function () {
+
+  $("#third").on("click", function () {
+    workingFile.xxx(12.80, 7.68, 1280, 768);
+  });
+};
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+//obsługa zdarzeń dla przycisku 800x600 pikseli
+var workingFile = __webpack_require__(1);
+
+module.exports.fourth = function () {
+
+  $("#fourth").on("click", function () {
+    workingFile.xxx(1360, 7.68, 1360, 768);
+  });
+};
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+//obsługa zdarzeń dla przycisku 800x600 pikseli
+var workingFile = __webpack_require__(1);
+
+module.exports.fifth = function () {
+
+  $("#fifth").on("click", function () {
+    workingFile.xxx(1366, 7.68, 1366, 768);
   });
 };
 
