@@ -3,6 +3,7 @@ let second=require("./screen1024x768.js");
 let third=require("./screen1280x768.js");
 let fourth=require("./screen1360x768.js");
 let fifth=require("./screen1366x768");
+let language=require("./language.js");
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -38,19 +39,19 @@ $(".main").append("<button id='calculatePixelsHeight'>oblicz</button>");
 $(".main").append("<p id='subTitlePercentsHeight'>Podaj liczbę (w procentach)</p>");
 $(".main").append("<input type='number' id='numberPercentsValueHeight'>");
 $(".main").append("<button id='calculatePercentsHeight'>oblicz</button>");
-$(".main").append("<p id='scoreTitle'>Wynik to:</p>");
+$(".main").append("<p id='scoreTitleHeight'>Wynik to:</p>");
 $(".main").append("<p id='scoreHeight' class='height5vh'></p>");
 
 $("#calculatePixelsHeight").on("click", () =>{
-let heightPixels = $("#numberPixelsValueHeight").val();
+  let heightPixels = $("#numberPixelsValueHeight").val();
   $("#scoreHeight").text(heightPixels/number2 + "%");
 });
 
 $("#subTitlePercentsHeight").text("Podaj liczbę (w procentach)");
-$("#calculatePercentsHeight").on("click", ()=>{
-let heightPercents = $("#numberPercentsValueHeight").val();
-  $("#scoreHeight").text(heightPercents*number2 + "px");
-});
+  $("#calculatePercentsHeight").on("click", ()=>{
+    let heightPercents = $("#numberPercentsValueHeight").val();
+    $("#scoreHeight").text(heightPercents*number2 + "px");
+  });
 }
 
   first.first();
@@ -58,4 +59,5 @@ let heightPercents = $("#numberPercentsValueHeight").val();
   third.third();
   fourth.fourth();
   fifth.fifth();
+  language.language();
 });//koniec DOMContentLoaded

@@ -60,18 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(1);
-
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -82,6 +75,7 @@ var second = __webpack_require__(3);
 var third = __webpack_require__(4);
 var fourth = __webpack_require__(5);
 var fifth = __webpack_require__(6);
+var language = __webpack_require__(7);
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -117,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $(".main").append("<p id='subTitlePercentsHeight'>Podaj liczbę (w procentach)</p>");
     $(".main").append("<input type='number' id='numberPercentsValueHeight'>");
     $(".main").append("<button id='calculatePercentsHeight'>oblicz</button>");
-    $(".main").append("<p id='scoreTitle'>Wynik to:</p>");
+    $(".main").append("<p id='scoreTitleHeight'>Wynik to:</p>");
     $(".main").append("<p id='scoreHeight' class='height5vh'></p>");
 
     $("#calculatePixelsHeight").on("click", function () {
@@ -137,7 +131,15 @@ document.addEventListener("DOMContentLoaded", function () {
   third.third();
   fourth.fourth();
   fifth.fifth();
+  language.language();
 }); //koniec DOMContentLoaded
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(0);
+
 
 /***/ }),
 /* 2 */
@@ -147,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //obsługa zdarzeń dla przycisku 800x600 pikseli
-var workingFile = __webpack_require__(1);
+var workingFile = __webpack_require__(0);
 
 module.exports.first = function () {
   $("#first").on("click", function () {
@@ -163,7 +165,7 @@ module.exports.first = function () {
 
 
 //obsługa zdarzeń dla przycisku 1024x768 pikseli
-var workingFile = __webpack_require__(1);
+var workingFile = __webpack_require__(0);
 
 module.exports.second = function () {
 
@@ -180,7 +182,7 @@ module.exports.second = function () {
 
 
 //obsługa zdarzeń dla przycisku 800x600 pikseli
-var workingFile = __webpack_require__(1);
+var workingFile = __webpack_require__(0);
 
 module.exports.third = function () {
 
@@ -197,7 +199,7 @@ module.exports.third = function () {
 
 
 //obsługa zdarzeń dla przycisku 800x600 pikseli
-var workingFile = __webpack_require__(1);
+var workingFile = __webpack_require__(0);
 
 module.exports.fourth = function () {
 
@@ -214,13 +216,64 @@ module.exports.fourth = function () {
 
 
 //obsługa zdarzeń dla przycisku 800x600 pikseli
-var workingFile = __webpack_require__(1);
+var workingFile = __webpack_require__(0);
 
 module.exports.fifth = function () {
 
   $("#fifth").on("click", function () {
     workingFile.xxx(1366, 7.68, 1366, 768);
   });
+};
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+//obsługa zdarzeń dla przycisku 800x600 pikseli
+var workingFile = __webpack_require__(0);
+
+module.exports.language = function () {
+
+        $("#language").on("click", function () {
+                if ($("#language").text() == "EN") {
+                        $(".title").empty().append("Coefficient of width and heights on percents");
+                        $("#pixelsToPercents").empty().append("Conversion of width: pixels to percents for width 800px ");
+                        $("#subTitlePixels").empty().append("It serve number (pixels)");
+                        $("#subTitlePercents").empty().append("It serve number (percents)");
+                        $("#calculatePixelsWidth").empty().append("calculate");
+                        $("#calculatePercentsWidth").empty().append("calculate");
+                        $("#scoreTitle").empty().append("Result");
+
+                        $("#pixelsToPercentsHeight").empty().append("Conversion of height: pixels to percents for height 600px ");
+                        $("#subTitlePixelsHeight").empty().append("It serve number (pixels)");
+                        $("#subTitlePercentsHeight").empty().append("It serve number (percents)");
+                        $("#calculatePixelsHeight").empty().append("calculate");
+                        $("#calculatePercentsHeight").empty().append("calculate");
+                        $("#scoreTitleHeight").empty().append("Result");
+
+                        $("#language").empty().append("PL");
+                } else if ($("#language").text() == "PL") {
+                        $(".title").empty().append("Przelicznik szerokości i wysokości na procenty");
+
+                        $("#pixelsToPercents").empty().append("Conversion of width: pixels to percents for width 800px ");
+                        $("#subTitlePixels").empty().append("Podaj liczbę (w pikselach)");
+                        $("#subTitlePercents").empty().append("Podaj liczbę (w procentach)");
+                        $("#calculatePixelsWidth").empty().append("oblicz");
+                        $("#calculatePercentsWidth").empty().append("Oblicz");
+                        $("#scoreTitle").empty().append("Wynik to:");
+
+                        $("#pixelsToPercentsHeight").empty().append("Kowersja wysokości z pikseli na procenty dla wysokości 600px");
+                        $("#subTitlePixelsHeight").empty().append("Podaj liczbę (w pikselach)");
+                        $("#subTitlePercentsHeight").empty().append("Podaj liczbę (w procentach)");
+                        $("#calculatePixelsHeight").empty().append("oblicz");
+                        $("#calculatePercentsHeight").empty().append("oblicz");
+                        $("#scoreTitleHeight").empty().append("Wynik to:");
+                        $("#language").empty().append("EN");
+                }
+        });
 };
 
 /***/ })

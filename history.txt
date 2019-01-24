@@ -4,6 +4,9 @@ Rozpoczęcie nowej wersji kalkulatora wartośc z pikseli na procenty i odwrotnie
 22 stycznia 2018 - wersja 0.0.2
 Poprawki dla szerokości ekranu 320px.
 
-23 stycznia 2018 - wersja 0.0.2
+23 stycznia 2018 - wersja 0.0.3
 Dodanie zdarzeń dla pozostałych rozdzielczości.
   Optymalizacja kodu.
+
+24 stycznia 2018 - wersja 0.0.4
+Dodanie tłumaczenia strony z polsiego na angielski ver. 1
