@@ -9,4 +9,7 @@ Dodanie zdarzeń dla pozostałych rozdzielczości.
   Optymalizacja kodu.
 
 24 stycznia 2018 - wersja 0.0.4
-Dodanie tłumaczenia strony z polsiego na angielski ver. 1
+Dodanie tłumaczenia strony z polskiego na angielski ver. 1.
+
+25 stycznia 2018 - wersja 0.0.5
+Tłumaczenie strony z polskiego na angielski ver. 2.
