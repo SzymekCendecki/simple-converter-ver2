@@ -1,0 +1,17 @@
+//for width 600px and 1024px
+
+@media(min-width: 1024px){
+  .btn{
+    padding: 2%;
+    width: 15%;
+  }
+
+  #numberPixelsValue, #numberPercentsValue, #numberPixelsValueHeight, #numberPercentsValueHeight{
+    width: 75%;
+    height: 20px;
+  }
+  #calculatePixelsWidth, #calculatePixelsHeight, #calculatePercentsWidth, #calculatePercentsHeight{
+    padding: 1%;
+    width: 30%;
+  }
+}
