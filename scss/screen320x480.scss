@@ -1,0 +1,64 @@
+//for width 320px and 480px
+
+nav{
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main{
+  text-align: center;
+}
+
+footer{
+  width: 100%;
+  text-align: center;
+  font-weight: 200;
+
+    span{
+      color: #0000D6;
+      font-weight: bold;
+    }
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.height5vh{
+  height: 5vh;
+}
+
+.btn{
+  padding: 2%;
+  width: 33%;
+  font-weight: bold;
+}
+
+#pixelsToPercents, #pixelsToPercentsHeight{
+  margin-top: 1%;
+}
+
+#numberPixelsValue, #numberPercentsValue, #numberPixelsValueHeight, #numberPercentsValueHeight{
+  width: 75%;
+  height: 20px;
+}
+
+#calculatePixelsWidth, #calculatePixelsHeight, #calculatePercentsWidth, #calculatePercentsHeight{
+  margin-top: 1%;
+  padding: 2%;
+  width: 25%;
+  font-weight: bold;
+}
+
+#scoreWidth, #scoreHeight{
+  color: #000080;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+input{
+  text-align: center;
+}

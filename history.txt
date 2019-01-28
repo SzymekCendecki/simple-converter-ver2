@@ -16,3 +16,6 @@ Tłumaczenie strony z polskiego na angielski ver. 2.
 
 27 stycznia 2018 - wersja 0.0.6
 Dopasowano wygląd konwertera dla szerokości 1024px (dla szerokości tabletu cavion 10 3 grq).
+
+28 stycznia 2018 - wersja 0.0.7
+Poprawka wyświetlania konwertera dla szerokości od 1024px.

@@ -79,63 +79,63 @@ var fifth = __webpack_require__(6);
 document.addEventListener("DOMContentLoaded", function () {
 
 	function english(number3, number4) {
-		$(".main").append("<p id='pixelsToPercents'>Conversion of width: pixels to percents for width " + number3 + "px</p>");
-		$(".main").append("<p id='subTitlePixels'>It serve number (pixels)</p>");
-		$(".main").append("<input type='number' id='numberPixelsValue'>");
-		$(".main").append("<button id='calculatePixelsWidth'>calculate</button>");
-		$(".main").append("<p id='subTitlePercents'>It serve number (percents)</p>");
-		$(".main").append("<input type='number' id='numberPercentsValue'>");
-		$(".main").append("<button id='calculatePercentsWidth'>calculate</button>");
-		$(".main").append("<p id='scoreTitle'>Result</p>");
-		$(".main").append("<p id='scoreWidth' class='height5vh'></p>");
+		$("#left").append("<p id='pixelsToPercents'>Conversion of width: pixels to percents for width " + number3 + "px</p>");
+		$("#left").append("<p id='subTitlePixels'>It serve number (pixels)</p>");
+		$("#left").append("<input type='number' id='numberPixelsValue'>");
+		$("#left").append("<button id='calculatePixelsWidth'>calculate</button>");
+		$("#left").append("<p id='subTitlePercents'>It serve number (percents)</p>");
+		$("#left").append("<input type='number' id='numberPercentsValue'>");
+		$("#left").append("<button id='calculatePercentsWidth'>calculate</button>");
+		$("#left").append("<p id='scoreTitle'>Result</p>");
+		$("#left").append("<p id='scoreWidth' class='height5vh'></p>");
 
-		$(".main").append("<p id='pixelsToPercentsHeight'>Conversion of height: pixels to percents for height " + number4 + "px</p>");
-		$(".main").append("<p id='subTitlePixelsHeight'>It serve number (pixels)</p>");
-		$(".main").append("<input type='number' id='numberPixelsValueHeight'>");
-		$(".main").append("<button id='calculatePixelsHeight'>calculate</button>");
-		$(".main").append("<p id='subTitlePercentsHeight'>It serve number (percents)</p>");
-		$(".main").append("<input type='number' id='numberPercentsValueHeight'>");
-		$(".main").append("<button id='calculatePercentsHeight'>calculate</button>");
-		$(".main").append("<p id='scoreTitleHeight'>Result</p>");
-		$(".main").append("<p id='scoreHeight' class='height5vh'></p>");
+		$("#right").append("<p id='pixelsToPercentsHeight'>Conversion of height: pixels to percents for height " + number4 + "px</p>");
+		$("#right").append("<p id='subTitlePixelsHeight'>It serve number (pixels)</p>");
+		$("#right").append("<input type='number' id='numberPixelsValueHeight'>");
+		$("#right").append("<button id='calculatePixelsHeight'>calculate</button>");
+		$("#right").append("<p id='subTitlePercentsHeight'>It serve number (percents)</p>");
+		$("#right").append("<input type='number' id='numberPercentsValueHeight'>");
+		$("#right").append("<button id='calculatePercentsHeight'>calculate</button>");
+		$("#right").append("<p id='scoreTitleHeight'>Result</p>");
+		$("#right").append("<p id='scoreHeight' class='height5vh'></p>");
 	}
 
 	function polish(number3, number4) {
-		$(".main").append("<p id='pixelsToPercents'>Konwersja szerokości z pikseli na procenty dla szerokości " + number3 + "px</p>");
-		$(".main").append("<p id='subTitlePixels'>Podaj liczbę (w pikselach)</p>");
-		$(".main").append("<input type='number' id='numberPixelsValue'>");
-		$(".main").append("<button id='calculatePixelsWidth'>oblicz</button>");
-		$(".main").append("<p id='subTitlePercents'>Podaj liczbę (w procentach)</p>");
-		$(".main").append("<input type='number' id='numberPercentsValue'>");
-		$(".main").append("<button id='calculatePercentsWidth'>oblicz</button>");
-		$(".main").append("<p id='scoreTitle'>Wynik to:</p>");
-		$(".main").append("<p id='scoreWidth' class='height5vh'></p>");
+		$("#left").append("<p id='pixelsToPercents'>Konwersja szerokości z pikseli na procenty dla szerokości " + number3 + "px</p>");
+		$("#left").append("<p id='subTitlePixels'>Podaj liczbę (w pikselach)</p>");
+		$("#left").append("<input type='number' id='numberPixelsValue'>");
+		$("#left").append("<button id='calculatePixelsWidth'>oblicz</button>");
+		$("#left").append("<p id='subTitlePercents'>Podaj liczbę (w procentach)</p>");
+		$("#left").append("<input type='number' id='numberPercentsValue'>");
+		$("#left").append("<button id='calculatePercentsWidth'>oblicz</button>");
+		$("#left").append("<p id='scoreTitle'>Wynik to:</p>");
+		$("#left").append("<p id='scoreWidth' class='height5vh'></p>");
 
-		$(".main").append("<p id='pixelsToPercentsHeight'>Konwersja wysokości z pikseli na procenty dla wysokości " + number4 + "px</p>");
-		$(".main").append("<p id='subTitlePixelsHeight'>Podaj liczbę (w pikselach)</p>");
-		$(".main").append("<input type='number' id='numberPixelsValueHeight'>");
-		$(".main").append("<button id='calculatePixelsHeight'>oblicz</button>");
-		$(".main").append("<p id='subTitlePercentsHeight'>Podaj liczbę (w procentach)</p>");
-		$(".main").append("<input type='number' id='numberPercentsValueHeight'>");
-		$(".main").append("<button id='calculatePercentsHeight'>oblicz</button>");
-		$(".main").append("<p id='scoreTitleHeight'>Wynik to:</p>");
-		$(".main").append("<p id='scoreHeight' class='height5vh'></p>");
+		$("#right").append("<p id='pixelsToPercentsHeight'>Konwersja wysokości z pikseli na procenty dla wysokości " + number4 + "px</p>");
+		$("#right").append("<p id='subTitlePixelsHeight'>Podaj liczbę (w pikselach)</p>");
+		$("#right").append("<input type='number' id='numberPixelsValueHeight'>");
+		$("#right").append("<button id='calculatePixelsHeight'>oblicz</button>");
+		$("#right").append("<p id='subTitlePercentsHeight'>Podaj liczbę (w procentach)</p>");
+		$("#right").append("<input type='number' id='numberPercentsValueHeight'>");
+		$("#right").append("<button id='calculatePercentsHeight'>oblicz</button>");
+		$("#right").append("<p id='scoreTitleHeight'>Wynik to:</p>");
+		$("#right").append("<p id='scoreHeight' class='height5vh'></p>");
 	}
 
 	$("#language").on("click", function () {
 		if ($("#language").text() == "EN") {
-			$(".main").empty();
+			$("#right, #left").empty();
 			$("#language").empty().append("PL");
 			$(".title").empty().append("Coefficient of width and heights on percents");
 		} else if ($("#language").text() == "PL") {
-			$(".main").empty();
+			$("#right, #left").empty();
 			$("#language").empty().append("EN");
 			$(".title").empty().append("Przelicznik szerokości i wysokości na procenty");
 		}
 	});
 
 	module.exports.xxx = function (number1, number2, number3, number4) {
-		$(".main").empty();
+		$("#right, #left").empty();
 
 		if ($("#language").text() == "EN") {
 			polish(number3, number4);
