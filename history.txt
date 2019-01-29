@@ -19,3 +19,6 @@ Dopasowano wygląd konwertera dla szerokości 1024px (dla szerokości tabletu ca
 
 28 stycznia 2018 - wersja 0.0.7
 Poprawka wyświetlania konwertera dla szerokości od 1024px.
+
+29 stycznia 2018 - wersja 0.0.8
+Zmieniono kolory przycisków.

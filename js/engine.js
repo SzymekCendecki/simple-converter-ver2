@@ -77,7 +77,6 @@ var fourth = __webpack_require__(5);
 var fifth = __webpack_require__(6);
 
 document.addEventListener("DOMContentLoaded", function () {
-
 	function english(number3, number4) {
 		$("#left").append("<p id='pixelsToPercents'>Conversion of width: pixels to percents for width " + number3 + "px</p>");
 		$("#left").append("<p id='subTitlePixels'>It serve number (pixels)</p>");
@@ -230,9 +229,9 @@ var workingFile = __webpack_require__(0);
 
 module.exports.second = function () {
 
-      $("#second").on("click", function () {
-            workingFile.xxx(10.24, 7.68, 1024, 768);
-      });
+    $("#second").on("click", function () {
+        workingFile.xxx(10.24, 7.68, 1024, 768);
+    });
 };
 
 /***/ }),
