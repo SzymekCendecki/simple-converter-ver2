@@ -5,6 +5,21 @@ let fourth=require("./screen1360x768.js");
 let fifth=require("./screen1366x768");
 
 document.addEventListener("DOMContentLoaded", () => {
+	$("#first, #second, #third, #fourth, #fifth, #language").hide();
+	var percents = 0;
+	  var id = setInterval(frame, 15);
+	  function frame() {
+	    if (percents == 100) {
+	      clearInterval(id);
+				$("#first, #second, #third, #fourth, #fifth, #language").show();
+				$("#loading").hide();
+	    } else {
+	      percents++;
+	      $("#loading").empty().append(percents + "%");
+	    }
+	  }
+
+
 	function english(number3, number4){
 		$("#left").append("<p id='pixelsToPercents'>Conversion of width: pixels to percents for width " + number3 +"px</p>");
 		$("#left").append("<p id='subTitlePixels'>It serve number (pixels)</p>");

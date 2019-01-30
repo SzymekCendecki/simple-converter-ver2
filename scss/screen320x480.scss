@@ -9,8 +9,6 @@ nav{
 
 .main{
   text-align: center;
-  position: absolute;
-  z-index: 5;
   width: 90%;
   button{
       background: linear-gradient(white, green);
@@ -62,3 +60,17 @@ input{
 #showHide{
   transform: scale(0.75);
 }
+
+
+#loading{
+      margin: 25vh;
+			font: 3em bold;
+			text-shadow: 1px 1px white;
+			animation: anim 3s;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes anim{
+			0%{ color: red; }
+			100%{ color: green; }
+		}

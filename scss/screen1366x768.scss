@@ -5,4 +5,12 @@
     padding: 1%;
     width: 15%;
   }
+
+  #loading{
+        margin-top: 35vh 0 0 75%;
+        font: 5em bold;
+        text-shadow: 1px 1px white;
+        animation: anim 3s;
+        animation-fill-mode: forwards;
+      }
 }

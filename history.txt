@@ -22,3 +22,6 @@ Poprawka wyświetlania konwertera dla szerokości od 1024px.
 
 29 stycznia 2018 - wersja 0.0.8
 Zmieniono kolory przycisków.
+
+30 stycznia 2018 - wersja 0.0.9
+Dodano animacje ładowania strony w postaci liczby procentów.
