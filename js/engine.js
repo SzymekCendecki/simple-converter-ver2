@@ -77,18 +77,48 @@ var fourth = __webpack_require__(5);
 var fifth = __webpack_require__(6);
 
 document.addEventListener("DOMContentLoaded", function () {
-	$("#first, #second, #third, #fourth, #fifth, #language").hide();
-	var percents = 0;
-	var id = setInterval(frame, 15);
-	function frame() {
-		if (percents == 100) {
-			clearInterval(id);
-			$("#first, #second, #third, #fourth, #fifth, #language").show();
-			$("#loading").hide();
-		} else {
-			percents++;
-			$("#loading").empty().append(percents + "%");
-		}
+	if ($(window).width() < 1024) {
+		var frame = function frame() {
+			if (percents == 100) {
+				clearInterval(id);
+				$("#loading").hide();
+				$("#showHide").show();
+				$(window).resize(function () {
+					if ($(window).width() < 1024) {
+						$("#showHide").show();
+						$("#first, #second, #third, #fourth, #fifth, #language").addClass("displayNone");
+					} else {
+						$("#showHide").hide();
+						$("#first, #second, #third, #fourth, #fifth, #language").addClass("displayBlock");
+					}
+				});
+			} else {
+				percents++;
+				$("#loading").empty().append(percents + "%");
+			}
+		};
+
+		$("#showHide").hide();
+		$("#first, #second, #third, #fourth, #fifth, #language").addClass("displayNone");
+		var percents = 0;
+		var id = setInterval(frame, 15);
+	} else if ($(window).width() >= 1024) {
+		var _frame = function _frame() {
+			if (percents == 100) {
+				clearInterval(id);
+				$("#loading").hide();
+				$("#showHide").hide();
+				$("#first, #second, #third, #fourth, #fifth, #language").addClass("displayBlock");
+			} else {
+				percents++;
+				$("#loading").empty().append(percents + "%");
+			}
+		};
+
+		$("#showHide").hide();
+		$("#first, #second, #third, #fourth, #fifth, #language").addClass("displayNone");
+		var percents = 0;
+		var id = setInterval(_frame, 15);
 	}
 
 	function english(number3, number4) {
@@ -144,6 +174,15 @@ document.addEventListener("DOMContentLoaded", function () {
 			$("#right, #left").empty();
 			$("#language").empty().append("EN");
 			$(".title").empty().append("Przelicznik szerokości i wysokości na procenty");
+		}
+	});
+
+	$("#showHide").on("click", function () {
+		$("#first, #second, #third, #fourth, #fifth, #language").toggleClass("displayBlock");
+		if ($('#showHide').text() == "+") {
+			$('#showHide').text("-");
+		} else {
+			$('#showHide').text("+");
 		}
 	});
 
